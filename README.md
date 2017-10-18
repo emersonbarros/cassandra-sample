@@ -1,10 +1,23 @@
+# Cassandra Sample
 
-Requires 
+One Paragraph of project description goes here
+
+### Prerequisites
+
+```
  Eclipse
  Maven
  Docker
+```
 
-To test execute:
+## Running the tests
+
+```
  mvn eclipse:eclipse
-Import on Eclipse
-./docker/start-cassandra
+
+ ./docker/start-cassandra
+```
+
+## Built With
+
+* [Maven](https://maven.apache.org/) - Dependency Management
