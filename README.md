@@ -1,6 +1,6 @@
 # Cassandra Sample
 
-One Paragraph of project description goes here
+This is a sample of Cassandra using mapping feature
 
 ### Prerequisites
 
@@ -20,4 +20,6 @@ One Paragraph of project description goes here
 
 ## Built With
 
+* [Eclipse](http://www.eclipse.org/) - IDE
 * [Maven](https://maven.apache.org/) - Dependency Management
+* [Docker](https://www.docker.com/) - Docker
