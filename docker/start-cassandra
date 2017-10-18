@@ -1,0 +1,1 @@
+docker run --name master_node -dt oscerd/cassandra:cassandra-2.1.17
