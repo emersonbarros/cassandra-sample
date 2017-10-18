@@ -7,13 +7,10 @@ import com.datastax.driver.mapping.annotations.Column;
 import com.datastax.driver.mapping.annotations.PartitionKey;
 import com.datastax.driver.mapping.annotations.Table;
 
-@Table(keyspace = "ks", name = "users",
-readConsistency = "QUORUM",
-writeConsistency = "QUORUM",
-caseSensitiveKeyspace = false,
-caseSensitiveTable = false)
+@Table(keyspace = "ks", name = "users", readConsistency = "QUORUM", writeConsistency = "QUORUM",
+    caseSensitiveKeyspace = false, caseSensitiveTable = false)
 public class User implements Serializable {
-  
+
   /**
    * 
    */
@@ -22,13 +19,15 @@ public class User implements Serializable {
   @PartitionKey
   @Column(name = "user_id")
   private UUID id;
-  
+
   @Column(name = "name")
   private String name;
-  
+
   private Address address;
-  
-  public User(UUID id, String name, Address adress){
+
+  public User() {}
+
+  public User(UUID id, String name, Address adress) {
     this.id = id;
     this.name = name;
     this.address = adress;

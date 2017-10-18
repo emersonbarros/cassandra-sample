@@ -13,6 +13,8 @@ public class Address implements Serializable {
   private static final long serialVersionUID = 5609799090660282256L;
   private String street;
 
+  public Address() {}
+
   public Address(String street) {
     this.street = street;
   }
